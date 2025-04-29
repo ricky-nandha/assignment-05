@@ -3,11 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>assignment</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Name Prediction</title>
     <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>asssignnnemne</h1>
+    <h1 tabindex="1" aria-label="header, lt's predict your labels ">
+      Let's predict your details!
+    </h1>
+
+    <form id="apiForm">
+      <label
+        for="userNameInput"
+        tabindex="2"
+        aria-label="subheading of enter your name"
+        >Enter Your Name:</label
+      >
+      <input
+        type="text"
+        id="userNameInput"
+        name="userNameInput"
+        placeholder="Enter your first name"
+        required
+        aria-label="form where you enter your first name"
+        tabindex="3"
+      />
+
+      <input
+        type="submit"
+        value="Predict!"
+        tabindex="
+      4"
+        aria-label="submit form to get a prediction for age, genmder and country"
+      />
+    </form>
+
+    <section
+      id="apiResults"
+      tabindex="5"
+      aria-label="results that predict your age, gender and country"
+    ></section>
   </body>
 </html>
